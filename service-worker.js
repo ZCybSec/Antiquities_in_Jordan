@@ -1,6 +1,6 @@
 self.addEventListener('install', (event) => {
     event.waitUntil(
-        caches.open('pwa-cache').then((cache) => {
+        caches.open('Antiquities-in-Jordan-cache').then((cache) => {
             return cache.addAll([
   '/Antiquities_in_Jordan/index.html',
   '/Antiquities_in_Jordan/amman.html',
