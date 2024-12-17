@@ -1,4 +1,4 @@
-const CACHE_NAME = 'jordan-sites-cache-v2';
+const CACHE_NAME = 'jordan-sites-cache-v3';
 const urlsToCache = [
   '/Antiquities_in_Jordan/index.html',
   '/Antiquities_in_Jordan/amman.html',
