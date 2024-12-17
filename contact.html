@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>تواصل معنا - موقع الآثار الأردنية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>موقع الآثار الأردنية</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li class="dropdown">
+                    <a href="#">معلومات عن الآثار</a>
+                    <div class="dropdown-content">
+                        <a href="amman.html">آثار عمّان</a>
+                        <a href="petra.html">آثار البتراء</a>
+                        <a href="jerash.html">آثار جرش</a>
+                    </div>
+                </li>
+                <li><a href="history.html">تاريخ الأردن</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>تواصل معنا</h2>
+            <p>نحن نرحب بأية استفسارات أو ملاحظات قد تكون لديك. يمكنك التواصل معنا من خلال ملء النموذج أدناه أو استخدام بيانات الاتصال المدرجة.</p>
+            <form action="mailto:zaid.hj2003@gmail.com" method="post" enctype="text/plain">
+                <label for="name">الاسم:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">البريد الإلكتروني:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">الرسالة:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br>
+                <input type="submit" value="إرسال">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2024</p>
+    </footer>
+</body>
+</html>

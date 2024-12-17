@@ -1,0 +1,363 @@
+/* تطبيق الخط المستورد */
+body {
+    font-family: 'Tajawal', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('petra-jordan25-940x940.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+}
+
+/* تحسين تصميم الهيدر */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000; /* ضمان أن الهيدر فوق العناصر الأخرى */
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* تحسين تصميم القائمة */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000; /* ضمان أن القائمة فوق العناصر الأخرى */
+    position: relative;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+/* تأثير التحويم على الروابط */
+nav ul li a:hover {
+    color: #ff7f50;
+    transform: scale(1.1);
+}
+
+/* إضافة خط تحت النص عند التحويم */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff7f50;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+/* تصميم المحتوى الرئيسي */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 160px);
+}
+
+/* تصميم القسم */
+/* تعديل المربع الأبيض للنص */
+section {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.95); /* خلفية شبه شفافة */
+    border-radius: 15px; /* زوايا أكثر تدويرًا */
+    border: 2px solid #14141336; /* إضافة إطار بلون مناسب */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25); /* ظل للمربع */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* تأثير عند التحويم */
+}
+
+/* تأثير عند تحريك الفأرة */
+section:hover {
+    transform: translateY(-10px); /* تحريك المربع للأعلى قليلاً */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.4); /* زيادة الظل */
+}
+
+/* تحسين النص داخل المربع */
+section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+section p {
+    font-size: 1.4em;
+    color: #555;
+    line-height: 1.8;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+
+
+/* تنسيق زر installButton */
+#installButton {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px; /* مساحة أعلى الزر لتحسين التباعد */
+    border: none;
+    border-radius: 5px;
+    background-color: #ff7f50;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 18px; /* تكبير الخط */
+}
+
+/* تأثيرات التحويم */
+#installButton:hover {
+    background-color: #ff6347; /* تغيير اللون */
+    transform: translateY(-3px); /* رفع للأعلى */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* زيادة الظل */
+}
+
+/* تأثير الضغط */
+#installButton:active {
+    background-color: #e5533d; /* لون مختلف عند الضغط */
+    transform: translateY(0); /* إعادة مكان الزر */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* تقليل الظل */
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* تحسين تصميم العناوين والفقرات */
+h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* تحسين تصميم الفوتر */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    z-index: 1000; /* ضمان أن الفوتر فوق العناصر الأخرى */
+}
+
+footer:hover {
+    opacity: 1;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* تصميم المعرض */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.gallery-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    max-width: 200px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+/* تصميم الفورم */
+/* الأساسيات للنموذج */
+form {
+    width: 70%;
+    max-width: 600px; /* الحد الأقصى للعرض لتحسين التناسق */
+    margin: 40px auto; /* توسيط النموذج */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* تنسيق العناوين */
+form label {
+    font-weight: bold;
+    display: block;
+    margin: 15px 0 5px; /* مساحة أعلى وأسفل العنصر */
+}
+
+/* تنسيق حقول الإدخال */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 80%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 16px; /* تكبير الخط لسهولة القراءة */
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #ff7f50;
+    box-shadow: 0px 0px 10px rgba(255, 127, 80, 0.5);
+}
+
+/* تنسيق زر الإرسال */
+form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px; /* مساحة أعلى الزر لتحسين التباعد */
+    border: none;
+    border-radius: 5px;
+    background-color: #ff7f50;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 18px; /* تكبير الخط */
+}
+
+form input[type="submit"]:hover {
+    background-color: #ff6347;
+    transform: scale(1.05);
+}
+
+/* تحسين التنسيق للمربعات النصية */
+form textarea {
+    height: 150px; /* تحديد ارتفاع مناسب لمربع النص */
+    resize: vertical; /* السماح بتغيير حجم مربع النص عمودياً فقط */
+}
+
+/* تصميم عنصر الإدخال عند الفوكس */
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #ff7f50;
+    box-shadow: 0px 0px 5px 2px #ff7f507f;
+}
+
+/* تحسين تصميم الزر */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* تحسين تصميم القائمة المنسدلة */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000; /* ضمان أن القائمة المنسدلة فوق العناصر الأخرى */
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+    overflow: hidden; /* لضمان أن العناصر لا تتجاوز الحدود */
+    transition: all 0.3s ease;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    transform: translateX(10px);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: dropdownFade 0.3s ease forwards;
+}
+
+/* إضافة تأثير ظهور للقائمة المنسدلة */
+@keyframes dropdownFade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
