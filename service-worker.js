@@ -20,7 +20,6 @@ self.addEventListener('install', (event) => {
   '/Antiquities_in_Jordan/Amman-Citadel-Passages.jpg',
   '/Antiquities_in_Jordan/Gerasa-Jordanien-Theodorkirche-erbaut-494-496-während-des-Episkopats-von-Aeneas-und-zu-Ehren-des-siegreichen-Theodor-der-unsterbliche-Märtyrer-e1639748931627.jpeg',
   '/Antiquities_in_Jordan/download.jpg',
-  '/Antiquities_in_Jordan/petra-jordan25-940x940 (1).jpg',
   '/Antiquities_in_Jordan/petra-jordan25-940x940.jpg',
   '/Antiquities_in_Jordan/temple-of-hercules-amman.jpg',
   '/Antiquities_in_Jordan/المدرج-الروماني.jpg',
