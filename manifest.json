@@ -4,7 +4,6 @@
   "description": "Explore historical sites in Jordan.",
   "start_url": "/Antiquities_in_Jordan/",
   "display": "standalone",
-  "orientation": "portrait",
   "background_color": "#f4f4f4",
   "theme_color": "#3a3a3a",
   "icons": [
