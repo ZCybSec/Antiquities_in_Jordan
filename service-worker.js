@@ -1,5 +1,7 @@
-const CACHE_NAME = 'jordan-sites-cache-v3';
-const urlsToCache = [
+self.addEventListener('install', (event) => {
+    event.waitUntil(
+        caches.open('pwa-cache').then((cache) => {
+            return cache.addAll([
   '/Antiquities_in_Jordan/index.html',
   '/Antiquities_in_Jordan/amman.html',
   '/Antiquities_in_Jordan/contact.html',
@@ -22,12 +24,7 @@ const urlsToCache = [
   '/Antiquities_in_Jordan/petra-jordan25-940x940.jpg',
   '/Antiquities_in_Jordan/temple-of-hercules-amman.jpg',
   '/Antiquities_in_Jordan/المدرج-الروماني.jpg',
-];
-
-self.addEventListener('install', (event) => {
-    event.waitUntil(
-        caches.open(CACHE_NAME).then((cache) => {
-            return cache.addAll(urlsToCache);
+]);
         })
     );
 });
