@@ -122,5 +122,19 @@
       "sizes": "310x310",
       "type": "image/png"
     }
+  ],
+  "screenshots": [
+    {
+      "src": "project(2).png"
+      "sizes": "1920x1080"
+      "type": "image/png"
+      "form_factor": "wide"
+    },
+    {
+      "src": "project(1).png"
+      "sizes": "1080x1920"
+      "type": "image/png"
+      "form_factor": "narrow"
+    }
   ]
 }
